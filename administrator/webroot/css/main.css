@@ -1,0 +1,180 @@
+h2.tit-page{
+    margin: 0 0 25px 0;
+    border-left: 5px #354052 solid;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 0 0 15px;
+    /*    border-bottom: 1px #d3d3d3 solid;*/
+    color: #354052;
+    box-shadow: 2px 2px 3px 0 #CCC;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .7px;
+}
+h2.subtit-page{
+    margin: 25px 0 25px 0;
+    border-left: 5px #646464 solid;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 0 0 15px;
+    color: #646464;
+    box-shadow: 2px 2px 3px 0 #CCC;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: .7px;
+}
+
+h2.tit-page .btn{
+    float: right;
+    margin: 9px 11px 0 0;
+}
+
+h3.subtit-page{
+    margin: 25px 0 25px 0;
+    border-left: 5px #ababab solid;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 0 0 15px;
+    color: #646464;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: .7px;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.size1{width: 1%}
+.size2{width: 2%}
+.size3{width: 3%}
+.size4{width: 4%}
+.size5{width: 5%}
+.size10{width: 10%}
+.size20{width: 20%}
+.size30{width: 30%}
+.size40{width: 40%}
+.size50{width: 50%}
+.size60{width: 60%}
+.size70{width: 70%}
+.size80{width: 80%}
+.size90{width: 90%}
+.size100{width: 100%}
+
+.padR{
+    padding-right: 10px;
+}
+.padL{
+    padding-left: 10px;
+}
+
+.marR{
+    margin-right: 10px;
+}
+.marL{
+    margin-left: 10px;
+}
+.marR20{
+    margin-right: 20px;
+}
+.marL20{
+    margin-left: 20px;
+}
+
+.area-filtros{
+    border-radius: 5px;
+    border: 1px #CCC solid;
+    padding: 10px;
+    /*        box-shadow: 2px 2px 5px 0 #AAA;*/
+    margin-bottom: 10px;
+    clear: both;
+    background-color: #F5F5F5;
+}
+.area-filtros hr{
+    background-color: #FFF;
+    border-top-color: #E0E0E0;
+}
+.area-filtros h4{
+    margin: 0 0 20px 0;
+    padding: 0;
+    /*        border: 1px #000 solid;*/
+    /*            font-weight: bold;*/
+    color:#a8a8ca;
+    letter-spacing: 1px;
+    font-size: 11px;
+}
+.area-filtros .btn{
+    margin-right: 5px;
+}
+.btn-only-one,
+.btn-only-selected{
+    display: none;
+}
+.container-grid{
+    border: 0 #CCC solid;
+    padding:0;
+    background-color: #f0f0f0;
+}
+.container-grid .container-tools-grid{
+    /* border: 1px #AAA solid;*/
+    padding: 15px 0;
+    color: #FFF;
+    background-color: #e9e9e9;
+}
+.container-grid .container-tools-grid .btn{
+    margin-right: 5px;
+}
+.container-grid  .tabulator-style{
+    border-top: 2px #777 solid;
+    border-bottom: 1px #777 solid;
+    border-left: 2px #777 solid;
+    border-right: 1px #777 solid;
+}
+.container-grid .container-tools-grid .paginator-tabulator{
+    /*        border: 1px red solid;*/
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    margin: 0 0 0 0;
+    padding: 0;
+}
+
+.input.checkbox{
+    border: 1px #CCC solid;
+    float: left;
+    padding: 10px 13px;;
+    background-color: #FFF;
+    border-radius: 5px;
+}
+.input.checkbox label{
+    padding: 0;
+    line-height: 18px;
+}
+.input.checkbox label input{
+    float: left;
+    position: static;
+    margin: 0 5px 0 0;
+}
+.form-group.datecake{
+
+}
+.form-group.datecake label{
+    display: block;
+}
+.form-group.datecake .form-control{
+    float: left;
+    width: 30%;
+}
+
+.form-group.datetimecake{
+/*    border: 1px #003d4c solid;*/
+    overflow: hidden;
+}
+.form-group.datetimecake label{
+    display: block;
+}
+.form-group.datetimecake .form-control{
+    float: left;
+    width: 15%;
+    margin-right: 6px;
+}

@@ -1,0 +1,63 @@
+body{
+    background: url('../img/login/micro_carbon.png') repeat; 
+}
+.form-signin {
+    width: 300px;
+    padding: 15px;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    top: 50%;
+    margin-top: -87.5px;
+}
+
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 11px;
+    background-color: #222;
+
+    border-radius: 10px;
+    box-shadow: 2px 5px 73px 0 #151515 inset;
+
+    color: #AAA;
+
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+    box-shadow: 10px 5px 73px 0 #131313 inset;
+
+}
+.form-signin input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-color: #181818 #232323 #272727 #181818;
+}
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-color: #272727 #232323 #2A2A2A #181818;
+}
+
+input.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #333;
+    text-shadow:none;
+}
+input.form-control::-moz-placeholder { /* Firefox 19+ */
+    color: #333;
+    text-shadow:none;
+}
+input.form-control:-ms-input-placeholder { /* IE 10+ */
+    color: #333;  
+    text-shadow:none;
+}
+input.form-control:-moz-placeholder { /* Firefox 18- */
+    color: #333;
+    text-shadow:none;
+}

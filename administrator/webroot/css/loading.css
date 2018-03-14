@@ -1,0 +1,3113 @@
+#loading{
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index:10000000;
+    display: none;
+}
+#loading .overlay-loading{
+
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 10000001;
+    top:0;
+    left: 0;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 5-7 */
+    filter: alpha(opacity=70);
+    /* Netscape */
+    -moz-opacity: 0.7;
+    /* Safari 1.x */
+    -khtml-opacity: 0.7;
+    /* Good browsers */
+    opacity: 0.7;      
+}
+#loading .box-img{
+    z-index: 10000002;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 50%;
+    margin-left: -50px;
+    top: 50%;
+    margin-top: -50px;
+    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
+}
+.cssload-thecube {
+    width: 73px;
+    height: 73px;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 49px;
+    position: relative;
+    transform: rotateZ(45deg);
+    -o-transform: rotateZ(45deg);
+    -ms-transform: rotateZ(45deg);
+    -webkit-transform: rotateZ(45deg);
+    -moz-transform: rotateZ(45deg);
+}
+.cssload-thecube .cssload-cube {
+    padding: 0;
+    position: relative;
+    transform: rotateZ(45deg);
+    -o-transform: rotateZ(45deg);
+    -ms-transform: rotateZ(45deg);
+    -webkit-transform: rotateZ(45deg);
+    -moz-transform: rotateZ(45deg);
+}
+.cssload-thecube .cssload-cube {
+    float: left;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    background-color: #638f41;
+}
+.cssload-thecube .cssload-cube:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(171,236,86);
+    animation: cssload-fold-thecube 1.44s infinite linear both;
+    -o-animation: cssload-fold-thecube 1.44s infinite linear both;
+    -ms-animation: cssload-fold-thecube 1.44s infinite linear both;
+    -webkit-animation: cssload-fold-thecube 1.44s infinite linear both;
+    -moz-animation: cssload-fold-thecube 1.44s infinite linear both;
+    transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+}
+.cssload-thecube .cssload-c2 {
+    transform: scale(1.1) rotateZ(90deg);
+    -o-transform: scale(1.1) rotateZ(90deg);
+    -ms-transform: scale(1.1) rotateZ(90deg);
+    -webkit-transform: scale(1.1) rotateZ(90deg);
+    -moz-transform: scale(1.1) rotateZ(90deg);
+    background-color: #638f41;
+}
+.cssload-thecube .cssload-c3 {
+    transform: scale(1.1) rotateZ(180deg);
+    -o-transform: scale(1.1) rotateZ(180deg);
+    -ms-transform: scale(1.1) rotateZ(180deg);
+    -webkit-transform: scale(1.1) rotateZ(180deg);
+    -moz-transform: scale(1.1) rotateZ(180deg);
+    background-color: #638f41;
+}
+.cssload-thecube .cssload-c4 {
+    transform: scale(1.1) rotateZ(270deg);
+    -o-transform: scale(1.1) rotateZ(270deg);
+    -ms-transform: scale(1.1) rotateZ(270deg);
+    -webkit-transform: scale(1.1) rotateZ(270deg);
+    -moz-transform: scale(1.1) rotateZ(270deg);
+    background-color: #638f41;
+}
+.cssload-thecube .cssload-c2:before {
+    animation-delay: 0.175s;
+    -o-animation-delay: 0.175s;
+    -ms-animation-delay: 0.175s;
+    -webkit-animation-delay: 0.175s;
+    -moz-animation-delay: 0.175s;
+}
+.cssload-thecube .cssload-c3:before {
+    animation-delay: 0.36s;
+    -o-animation-delay: 0.36s;
+    -ms-animation-delay: 0.36s;
+    -webkit-animation-delay: 0.36s;
+    -moz-animation-delay: 0.36s;
+}
+.cssload-thecube .cssload-c4:before {
+    animation-delay: 0.535s;
+    -o-animation-delay: 0.535s;
+    -ms-animation-delay: 0.535s;
+    -webkit-animation-delay: 0.535s;
+    -moz-animation-delay: 0.535s;
+}
+
+
+
+@keyframes cssload-fold-thecube {
+    0%, 10% {
+        transform: perspective(136px) rotateX(-180deg);
+        opacity: 0;
+    }
+    25%,
+    75% {
+        transform: perspective(136px) rotateX(0deg);
+        opacity: 1;
+    }
+    90%,
+    100% {
+        transform: perspective(136px) rotateY(180deg);
+        opacity: 0;
+    }
+}
+
+@-o-keyframes cssload-fold-thecube {
+    0%, 10% {
+        -o-transform: perspective(136px) rotateX(-180deg);
+        opacity: 0;
+    }
+    25%,
+    75% {
+        -o-transform: perspective(136px) rotateX(0deg);
+        opacity: 1;
+    }
+    90%,
+    100% {
+        -o-transform: perspective(136px) rotateY(180deg);
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes cssload-fold-thecube {
+    0%, 10% {
+        -ms-transform: perspective(136px) rotateX(-180deg);
+        opacity: 0;
+    }
+    25%,
+    75% {
+        -ms-transform: perspective(136px) rotateX(0deg);
+        opacity: 1;
+    }
+    90%,
+    100% {
+        -ms-transform: perspective(136px) rotateY(180deg);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes cssload-fold-thecube {
+    0%, 10% {
+        -webkit-transform: perspective(136px) rotateX(-180deg);
+        opacity: 0;
+    }
+    25%,
+    75% {
+        -webkit-transform: perspective(136px) rotateX(0deg);
+        opacity: 1;
+    }
+    90%,
+    100% {
+        -webkit-transform: perspective(136px) rotateY(180deg);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes cssload-fold-thecube {
+    0%, 10% {
+        -moz-transform: perspective(136px) rotateX(-180deg);
+        opacity: 0;
+    }
+    25%,
+    75% {
+        -moz-transform: perspective(136px) rotateX(0deg);
+        opacity: 1;
+    }
+    90%,
+    100% {
+        -moz-transform: perspective(136px) rotateY(180deg);
+        opacity: 0;
+    }
+}
+
+/*INNER LOADING*/
+.spinner {
+    width: 50px;
+    height: 50px;
+
+    position: relative;
+    margin: 100px auto;        
+}
+
+.double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #7eac40;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;     
+
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+    0%, 100% { 
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    } 50% { 
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
+/*#############################################################################*/
+/*#############################################################################*/
+/*#############################################################################*/
+#loading-inner-modal{
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 80;
+    color: #FFF;
+    text-align: center;
+    line-height: 100%;
+    opacity: .7;
+    padding: 50px 0;
+    border-radius: 5px;
+}
+
+#loading-inner-tabulator{
+    background-color: #000000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 80;
+    color: #FFF;
+    text-align: center;
+    line-height: 100%;
+    opacity: .8;
+}
+
+#loading-inner-html{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 80;
+    color: #FFF;
+    text-align: center;
+    line-height: 100%;
+    opacity: .7;
+    padding: 150px 0;
+    border-radius: 5px;
+}
+
+.cssload-container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.cssload-zenith {
+    align-self:center;
+    width: 49px;
+    height: 49px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    box-shadow: 3px 3px 2px rgb(255,255,255);
+    animation: cssload-spin 690ms infinite linear;
+    -o-animation: cssload-spin 690ms infinite linear;
+    -ms-animation: cssload-spin 690ms infinite linear;
+    -webkit-animation: cssload-spin 690ms infinite linear;
+    -moz-animation: cssload-spin 690ms infinite linear;
+}
+
+@keyframes cssload-spin {
+    100%{ transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-o-keyframes cssload-spin {
+    100%{ -o-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-ms-keyframes cssload-spin {
+    100%{ -ms-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-webkit-keyframes cssload-spin {
+    100%{ -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-moz-keyframes cssload-spin {
+    100%{ -moz-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+/*DEDOS LOADING*/
+.cssload-loading *{
+    -khtml-box-sizing: border-box;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;	
+}
+
+.cssload-loading {
+    position: absolute;
+    left: 50%;
+    margin: -70px 0 0 -112px;
+    width: 240px;
+    height: 140px;
+    *zoom: 1;
+}
+.cssload-loading:before,
+.cssload-loading:after {
+    display: table;
+    content: "";
+}
+.cssload-loading:after {
+    clear: both;
+}
+.cssload-loading .cssload-finger {
+    float: left;
+    margin: 0 4px 0 0;
+    width: 40px;
+    height: 100%;
+}
+.cssload-loading .cssload-finger-1 {
+    animation: cssload-finger-1-animation 1.8s infinite ease-out;
+    -o-animation: cssload-finger-1-animation 1.8s infinite ease-out;
+    -ms-animation: cssload-finger-1-animation 1.8s infinite ease-out;
+    -webkit-animation: cssload-finger-1-animation 1.8s infinite ease-out;
+    -moz-animation: cssload-finger-1-animation 1.8s infinite ease-out;
+}
+.cssload-loading .cssload-finger-1 span {
+    animation: cssload-finger-1-animation-span 1.8s infinite ease-out;
+    -o-animation: cssload-finger-1-animation-span 1.8s infinite ease-out;
+    -ms-animation: cssload-finger-1-animation-span 1.8s infinite ease-out;
+    -webkit-animation: cssload-finger-1-animation-span 1.8s infinite ease-out;
+    -moz-animation: cssload-finger-1-animation-span 1.8s infinite ease-out;
+}
+.cssload-loading .cssload-finger-1 i {
+    animation: cssload-finger-1-animation-i 1.8s infinite ease-out;
+    -o-animation: cssload-finger-1-animation-i 1.8s infinite ease-out;
+    -ms-animation: cssload-finger-1-animation-i 1.8s infinite ease-out;
+    -webkit-animation: cssload-finger-1-animation-i 1.8s infinite ease-out;
+    -moz-animation: cssload-finger-1-animation-i 1.8s infinite ease-out;
+}
+.cssload-loading .cssload-finger-2 {
+    animation: cssload-finger-2-animation 1.8s infinite ease-out;
+    -o-animation: cssload-finger-2-animation 1.8s infinite ease-out;
+    -ms-animation: cssload-finger-2-animation 1.8s infinite ease-out;
+    -webkit-animation: cssload-finger-2-animation 1.8s infinite ease-out;
+    -moz-animation: cssload-finger-2-animation 1.8s infinite ease-out;
+}
+.cssload-loading .cssload-finger-2 span {
+    animation: cssload-finger-2-animation-span 1.8s infinite ease-out;
+    -o-animation: cssload-finger-2-animation-span 1.8s infinite ease-out;
+    -ms-animation: cssload-finger-2-animation-span 1.8s infinite ease-out;
+    -webkit-animation: cssload-finger-2-animation-span 1.8s infinite ease-out;
+    -moz-animation: cssload-finger-2-animation-span 1.8s infinite ease-out;
+}
+.cssload-loading .cssload-finger-2 i {
+    animation: cssload-finger-2-animation-i 1.8s infinite ease-out;
+    -o-animation: cssload-finger-2-animation-i 1.8s infinite ease-out;
+    -ms-animation: cssload-finger-2-animation-i 1.8s infinite ease-out;
+    -webkit-animation: cssload-finger-2-animation-i 1.8s infinite ease-out;
+    -moz-animation: cssload-finger-2-animation-i 1.8s infinite ease-out;
+}
+.cssload-loading .cssload-finger-3 {
+    animation: cssload-finger-3-animation 1.8s infinite ease-out;
+    -o-animation: cssload-finger-3-animation 1.8s infinite ease-out;
+    -ms-animation: cssload-finger-3-animation 1.8s infinite ease-out;
+    -webkit-animation: cssload-finger-3-animation 1.8s infinite ease-out;
+    -moz-animation: cssload-finger-3-animation 1.8s infinite ease-out;
+}
+.cssload-loading .cssload-finger-3 span {
+    animation: cssload-finger-3-animation-span 1.8s infinite ease-out;
+    -o-animation: cssload-finger-3-animation-span 1.8s infinite ease-out;
+    -ms-animation: cssload-finger-3-animation-span 1.8s infinite ease-out;
+    -webkit-animation: cssload-finger-3-animation-span 1.8s infinite ease-out;
+    -moz-animation: cssload-finger-3-animation-span 1.8s infinite ease-out;
+}
+.cssload-loading .cssload-finger-3 i {
+    animation: cssload-finger-3-animation-i 1.8s infinite ease-out;
+    -o-animation: cssload-finger-3-animation-i 1.8s infinite ease-out;
+    -ms-animation: cssload-finger-3-animation-i 1.8s infinite ease-out;
+    -webkit-animation: cssload-finger-3-animation-i 1.8s infinite ease-out;
+    -moz-animation: cssload-finger-3-animation-i 1.8s infinite ease-out;
+}
+.cssload-loading .cssload-finger-4 {
+    animation: cssload-finger-4-animation 1.8s infinite ease-out;
+    -o-animation: cssload-finger-4-animation 1.8s infinite ease-out;
+    -ms-animation: cssload-finger-4-animation 1.8s infinite ease-out;
+    -webkit-animation: cssload-finger-4-animation 1.8s infinite ease-out;
+    -moz-animation: cssload-finger-4-animation 1.8s infinite ease-out;
+}
+.cssload-loading .cssload-finger-4 span {
+    animation: cssload-finger-4-animation-span 1.8s infinite ease-out;
+    -o-animation: cssload-finger-4-animation-span 1.8s infinite ease-out;
+    -ms-animation: cssload-finger-4-animation-span 1.8s infinite ease-out;
+    -webkit-animation: cssload-finger-4-animation-span 1.8s infinite ease-out;
+    -moz-animation: cssload-finger-4-animation-span 1.8s infinite ease-out;
+}
+.cssload-loading .cssload-finger-4 i {
+    animation: cssload-finger-4-animation-i 1.8s infinite ease-out;
+    -o-animation: cssload-finger-4-animation-i 1.8s infinite ease-out;
+    -ms-animation: cssload-finger-4-animation-i 1.8s infinite ease-out;
+    -webkit-animation: cssload-finger-4-animation-i 1.8s infinite ease-out;
+    -moz-animation: cssload-finger-4-animation-i 1.8s infinite ease-out;
+}
+.cssload-loading .cssload-finger-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px 12px 16px 16px;
+    -o-border-radius: 12px 12px 16px 16px;
+    -ms-border-radius: 12px 12px 16px 16px;
+    -webkit-border-radius: 12px 12px 16px 16px;
+    -moz-border-radius: 12px 12px 16px 16px;
+    background-clip: padding-box;
+    -o-background-clip: padding-box;
+    -ms-background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background: rgb(179,179,179);
+}
+.cssload-loading .cssload-finger-item span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    padding: 10px 10px 0 10px;
+}
+.cssload-loading .cssload-finger-item span:before,
+.cssload-loading .cssload-finger-item span:after {
+    content: '';
+    position: relative;
+    display: block;
+    margin: 0 0 4px 0;
+    width: 100%;
+    height: 4px;
+    background: rgb(255,255,255);
+}
+.cssload-loading .cssload-finger-item i {
+    position: absolute;
+    left: 6px;
+    bottom: 6px;
+    width: 28px;
+    height: 28px;
+    border-radius: 20px 20px 14px 14px;
+    -o-border-radius: 20px 20px 14px 14px;
+    -ms-border-radius: 20px 20px 14px 14px;
+    -webkit-border-radius: 20px 20px 14px 14px;
+    -moz-border-radius: 20px 20px 14px 14px;
+    background-clip: padding-box;
+    -o-background-clip: padding-box;
+    -ms-background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background: rgb(255,255,255);
+}
+.cssload-loading .cssload-last-finger {
+    position: relative;
+    float: left;
+    width: 48px;
+    height: 100%;
+    overflow: hidden;
+}
+.cssload-loading .cssload-last-finger-item {
+    position: absolute;
+    right: 0;
+    top: 64px;
+    width: 110%;
+    height: 40px;
+    border-radius: 0 10px 28px 0;
+    -o-border-radius: 0 10px 28px 0;
+    -ms-border-radius: 0 10px 28px 0;
+    -webkit-border-radius: 0 10px 28px 0;
+    -moz-border-radius: 0 10px 28px 0;
+    background-clip: padding-box;
+    -o-background-clip: padding-box;
+    -ms-background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background: rgb(179,179,179);
+    animation: cssload-finger-5-animation 1.8s infinite linear;
+    -o-animation: cssload-finger-5-animation 1.8s infinite linear;
+    -ms-animation: cssload-finger-5-animation 1.8s infinite linear;
+    -webkit-animation: cssload-finger-5-animation 1.8s infinite linear;
+    -moz-animation: cssload-finger-5-animation 1.8s infinite linear;
+}
+.cssload-loading .cssload-last-finger-item i {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    width: 44px;
+    height: 10px;
+    background: rgb(179,179,179);
+    overflow: hidden;
+}
+.cssload-loading .cssload-last-finger-item i:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 68px;
+    height: 40px;
+    border-radius: 0 0 30px 30px;
+    -o-border-radius: 0 0 30px 30px;
+    -ms-border-radius: 0 0 30px 30px;
+    -webkit-border-radius: 0 0 30px 30px;
+    -moz-border-radius: 0 0 30px 30px;
+    background-clip: padding-box;
+    -o-background-clip: padding-box;
+    -ms-background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background: rgb(255,255,255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes cssload-finger-1-animation {
+    0% {
+        padding: 24px 0 10px 0;
+    }
+    20% {
+        padding: 24px 0 10px 0;
+    }
+    29% {
+        padding: 8px 0 48px 0;
+    }
+    35% {
+        padding: 8px 0 48px 0;
+    }
+    41% {
+        padding: 24px 0 10px 0;
+    }
+    100% {
+        padding: 24px 0 10px 0;
+    }
+}
+
+@-o-keyframes cssload-finger-1-animation {
+    0% {
+        padding: 24px 0 10px 0;
+    }
+    20% {
+        padding: 24px 0 10px 0;
+    }
+    29% {
+        padding: 8px 0 48px 0;
+    }
+    35% {
+        padding: 8px 0 48px 0;
+    }
+    41% {
+        padding: 24px 0 10px 0;
+    }
+    100% {
+        padding: 24px 0 10px 0;
+    }
+}
+
+@-ms-keyframes cssload-finger-1-animation {
+    0% {
+        padding: 24px 0 10px 0;
+    }
+    20% {
+        padding: 24px 0 10px 0;
+    }
+    29% {
+        padding: 8px 0 48px 0;
+    }
+    35% {
+        padding: 8px 0 48px 0;
+    }
+    41% {
+        padding: 24px 0 10px 0;
+    }
+    100% {
+        padding: 24px 0 10px 0;
+    }
+}
+
+@-webkit-keyframes cssload-finger-1-animation {
+    0% {
+        padding: 24px 0 10px 0;
+    }
+    20% {
+        padding: 24px 0 10px 0;
+    }
+    29% {
+        padding: 8px 0 48px 0;
+    }
+    35% {
+        padding: 8px 0 48px 0;
+    }
+    41% {
+        padding: 24px 0 10px 0;
+    }
+    100% {
+        padding: 24px 0 10px 0;
+    }
+}
+
+@-moz-keyframes cssload-finger-1-animation {
+    0% {
+        padding: 24px 0 10px 0;
+    }
+    20% {
+        padding: 24px 0 10px 0;
+    }
+    29% {
+        padding: 8px 0 48px 0;
+    }
+    35% {
+        padding: 8px 0 48px 0;
+    }
+    41% {
+        padding: 24px 0 10px 0;
+    }
+    100% {
+        padding: 24px 0 10px 0;
+    }
+}
+
+@keyframes cssload-finger-1-animation-span {
+    0% {
+        top: 0;
+    }
+    20% {
+        top: 0;
+    }
+    29% {
+        top: -14px;
+    }
+    35% {
+        top: -14px;
+    }
+    41% {
+        top: 0;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@-o-keyframes cssload-finger-1-animation-span {
+    0% {
+        top: 0;
+    }
+    20% {
+        top: 0;
+    }
+    29% {
+        top: -14px;
+    }
+    35% {
+        top: -14px;
+    }
+    41% {
+        top: 0;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@-ms-keyframes cssload-finger-1-animation-span {
+    0% {
+        top: 0;
+    }
+    20% {
+        top: 0;
+    }
+    29% {
+        top: -14px;
+    }
+    35% {
+        top: -14px;
+    }
+    41% {
+        top: 0;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@-webkit-keyframes cssload-finger-1-animation-span {
+    0% {
+        top: 0;
+    }
+    20% {
+        top: 0;
+    }
+    29% {
+        top: -14px;
+    }
+    35% {
+        top: -14px;
+    }
+    41% {
+        top: 0;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@-moz-keyframes cssload-finger-1-animation-span {
+    0% {
+        top: 0;
+    }
+    20% {
+        top: 0;
+    }
+    29% {
+        top: -14px;
+    }
+    35% {
+        top: -14px;
+    }
+    41% {
+        top: 0;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes cssload-finger-1-animation-i {
+    0% {
+        bottom: 6px;
+        height: 28px;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    20% {
+        bottom: 6px;
+        height: 28px;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    29% {
+        bottom: 16px;
+        height: 24px;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    35% {
+        bottom: 16px;
+        height: 24px;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    41% {
+        bottom: 6px;
+        height: 28px;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    100% {
+        bottom: 6px;
+        height: 28px;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+}
+
+@-o-keyframes cssload-finger-1-animation-i {
+    0% {
+        bottom: 6px;
+        height: 28px;
+        -o-border-radius: 20px 20px 14px 14px;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    20% {
+        bottom: 6px;
+        height: 28px;
+        -o-border-radius: 20px 20px 14px 14px;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    29% {
+        bottom: 16px;
+        height: 24px;
+        -o-border-radius: 14px 14px 8px 8px;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    35% {
+        bottom: 16px;
+        height: 24px;
+        -o-border-radius: 14px 14px 8px 8px;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    41% {
+        bottom: 6px;
+        height: 28px;
+        -o-border-radius: 20px 20px 14px 14px;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    100% {
+        bottom: 6px;
+        height: 28px;
+        -o-border-radius: 20px 20px 14px 14px;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+}
+
+@-ms-keyframes cssload-finger-1-animation-i {
+    0% {
+        bottom: 6px;
+        height: 28px;
+        -ms-border-radius: 20px 20px 14px 14px;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    20% {
+        bottom: 6px;
+        height: 28px;
+        -ms-border-radius: 20px 20px 14px 14px;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    29% {
+        bottom: 16px;
+        height: 24px;
+        -ms-border-radius: 14px 14px 8px 8px;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    35% {
+        bottom: 16px;
+        height: 24px;
+        -ms-border-radius: 14px 14px 8px 8px;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    41% {
+        bottom: 6px;
+        height: 28px;
+        -ms-border-radius: 20px 20px 14px 14px;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    100% {
+        bottom: 6px;
+        height: 28px;
+        -ms-border-radius: 20px 20px 14px 14px;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+}
+
+@-webkit-keyframes cssload-finger-1-animation-i {
+    0% {
+        bottom: 6px;
+        height: 28px;
+        -webkit-border-radius: 20px 20px 14px 14px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    20% {
+        bottom: 6px;
+        height: 28px;
+        -webkit-border-radius: 20px 20px 14px 14px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    29% {
+        bottom: 16px;
+        height: 24px;
+        -webkit-border-radius: 14px 14px 8px 8px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    35% {
+        bottom: 16px;
+        height: 24px;
+        -webkit-border-radius: 14px 14px 8px 8px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    41% {
+        bottom: 6px;
+        height: 28px;
+        -webkit-border-radius: 20px 20px 14px 14px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    100% {
+        bottom: 6px;
+        height: 28px;
+        -webkit-border-radius: 20px 20px 14px 14px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+}
+
+@-moz-keyframes cssload-finger-1-animation-i {
+    0% {
+        bottom: 6px;
+        height: 28px;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    20% {
+        bottom: 6px;
+        height: 28px;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    29% {
+        bottom: 16px;
+        height: 24px;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    35% {
+        bottom: 16px;
+        height: 24px;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    41% {
+        bottom: 6px;
+        height: 28px;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    100% {
+        bottom: 6px;
+        height: 28px;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+}
+
+@keyframes cssload-finger-2-animation {
+    0% {
+        padding: 12px 0 4px 0;
+    }
+    24% {
+        padding: 12px 0 4px 0;
+    }
+    33% {
+        padding: 4px 0 32px 0;
+    }
+    39% {
+        padding: 4px 0 32px 0;
+    }
+    45% {
+        padding: 12px 0 4px 0;
+    }
+    100% {
+        padding: 12px 0 4px 0;
+    }
+}
+
+@-o-keyframes cssload-finger-2-animation {
+    0% {
+        padding: 12px 0 4px 0;
+    }
+    24% {
+        padding: 12px 0 4px 0;
+    }
+    33% {
+        padding: 4px 0 32px 0;
+    }
+    39% {
+        padding: 4px 0 32px 0;
+    }
+    45% {
+        padding: 12px 0 4px 0;
+    }
+    100% {
+        padding: 12px 0 4px 0;
+    }
+}
+
+@-ms-keyframes cssload-finger-2-animation {
+    0% {
+        padding: 12px 0 4px 0;
+    }
+    24% {
+        padding: 12px 0 4px 0;
+    }
+    33% {
+        padding: 4px 0 32px 0;
+    }
+    39% {
+        padding: 4px 0 32px 0;
+    }
+    45% {
+        padding: 12px 0 4px 0;
+    }
+    100% {
+        padding: 12px 0 4px 0;
+    }
+}
+
+@-webkit-keyframes cssload-finger-2-animation {
+    0% {
+        padding: 12px 0 4px 0;
+    }
+    24% {
+        padding: 12px 0 4px 0;
+    }
+    33% {
+        padding: 4px 0 32px 0;
+    }
+    39% {
+        padding: 4px 0 32px 0;
+    }
+    45% {
+        padding: 12px 0 4px 0;
+    }
+    100% {
+        padding: 12px 0 4px 0;
+    }
+}
+
+@-moz-keyframes cssload-finger-2-animation {
+    0% {
+        padding: 12px 0 4px 0;
+    }
+    24% {
+        padding: 12px 0 4px 0;
+    }
+    33% {
+        padding: 4px 0 32px 0;
+    }
+    39% {
+        padding: 4px 0 32px 0;
+    }
+    45% {
+        padding: 12px 0 4px 0;
+    }
+    100% {
+        padding: 12px 0 4px 0;
+    }
+}
+
+@keyframes cssload-finger-2-animation-span {
+    0% {
+        top: 0;
+    }
+    24% {
+        top: 0;
+    }
+    33% {
+        top: -14px;
+    }
+    39% {
+        top: -14px;
+    }
+    45% {
+        top: 0;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@-o-keyframes cssload-finger-2-animation-span {
+    0% {
+        top: 0;
+    }
+    24% {
+        top: 0;
+    }
+    33% {
+        top: -14px;
+    }
+    39% {
+        top: -14px;
+    }
+    45% {
+        top: 0;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@-ms-keyframes cssload-finger-2-animation-span {
+    0% {
+        top: 0;
+    }
+    24% {
+        top: 0;
+    }
+    33% {
+        top: -14px;
+    }
+    39% {
+        top: -14px;
+    }
+    45% {
+        top: 0;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@-webkit-keyframes cssload-finger-2-animation-span {
+    0% {
+        top: 0;
+    }
+    24% {
+        top: 0;
+    }
+    33% {
+        top: -14px;
+    }
+    39% {
+        top: -14px;
+    }
+    45% {
+        top: 0;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@-moz-keyframes cssload-finger-2-animation-span {
+    0% {
+        top: 0;
+    }
+    24% {
+        top: 0;
+    }
+    33% {
+        top: -14px;
+    }
+    39% {
+        top: -14px;
+    }
+    45% {
+        top: 0;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes cssload-finger-2-animation-i {
+    0% {
+        bottom: 6px;
+        height: 28px;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    24% {
+        bottom: 6px;
+        height: 28px;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    33% {
+        bottom: 16px;
+        height: 24px;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    39% {
+        bottom: 16px;
+        height: 24px;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    45% {
+        bottom: 6px;
+        height: 28px;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    100% {
+        bottom: 6px;
+        height: 28px;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+}
+
+@-o-keyframes cssload-finger-2-animation-i {
+    0% {
+        bottom: 6px;
+        height: 28px;
+        -o-border-radius: 20px 20px 14px 14px;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    24% {
+        bottom: 6px;
+        height: 28px;
+        -o-border-radius: 20px 20px 14px 14px;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    33% {
+        bottom: 16px;
+        height: 24px;
+        -o-border-radius: 14px 14px 8px 8px;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    39% {
+        bottom: 16px;
+        height: 24px;
+        -o-border-radius: 14px 14px 8px 8px;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    45% {
+        bottom: 6px;
+        height: 28px;
+        -o-border-radius: 20px 20px 14px 14px;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    100% {
+        bottom: 6px;
+        height: 28px;
+        -o-border-radius: 20px 20px 14px 14px;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+}
+
+@-ms-keyframes cssload-finger-2-animation-i {
+    0% {
+        bottom: 6px;
+        height: 28px;
+        -ms-border-radius: 20px 20px 14px 14px;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    24% {
+        bottom: 6px;
+        height: 28px;
+        -ms-border-radius: 20px 20px 14px 14px;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    33% {
+        bottom: 16px;
+        height: 24px;
+        -ms-border-radius: 14px 14px 8px 8px;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    39% {
+        bottom: 16px;
+        height: 24px;
+        -ms-border-radius: 14px 14px 8px 8px;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    45% {
+        bottom: 6px;
+        height: 28px;
+        -ms-border-radius: 20px 20px 14px 14px;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    100% {
+        bottom: 6px;
+        height: 28px;
+        -ms-border-radius: 20px 20px 14px 14px;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+}
+
+@-webkit-keyframes cssload-finger-2-animation-i {
+    0% {
+        bottom: 6px;
+        height: 28px;
+        -webkit-border-radius: 20px 20px 14px 14px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    24% {
+        bottom: 6px;
+        height: 28px;
+        -webkit-border-radius: 20px 20px 14px 14px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    33% {
+        bottom: 16px;
+        height: 24px;
+        -webkit-border-radius: 14px 14px 8px 8px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    39% {
+        bottom: 16px;
+        height: 24px;
+        -webkit-border-radius: 14px 14px 8px 8px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    45% {
+        bottom: 6px;
+        height: 28px;
+        -webkit-border-radius: 20px 20px 14px 14px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    100% {
+        bottom: 6px;
+        height: 28px;
+        -webkit-border-radius: 20px 20px 14px 14px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+}
+
+@-moz-keyframes cssload-finger-2-animation-i {
+    0% {
+        bottom: 6px;
+        height: 28px;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    24% {
+        bottom: 6px;
+        height: 28px;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    33% {
+        bottom: 16px;
+        height: 24px;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    39% {
+        bottom: 16px;
+        height: 24px;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    45% {
+        bottom: 6px;
+        height: 28px;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    100% {
+        bottom: 6px;
+        height: 28px;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+}
+
+@keyframes cssload-finger-3-animation {
+    0% {
+        padding: 0 0 0 0;
+    }
+    28% {
+        padding: 0 0 0 0;
+    }
+    37% {
+        padding: 0 0 24px 0;
+    }
+    43% {
+        padding: 0 0 24px 0;
+    }
+    49% {
+        padding: 0 0 0 0;
+    }
+    100% {
+        padding: 0 0 0 0;
+    }
+}
+
+@-o-keyframes cssload-finger-3-animation {
+    0% {
+        padding: 0 0 0 0;
+    }
+    28% {
+        padding: 0 0 0 0;
+    }
+    37% {
+        padding: 0 0 24px 0;
+    }
+    43% {
+        padding: 0 0 24px 0;
+    }
+    49% {
+        padding: 0 0 0 0;
+    }
+    100% {
+        padding: 0 0 0 0;
+    }
+}
+
+@-ms-keyframes cssload-finger-3-animation {
+    0% {
+        padding: 0 0 0 0;
+    }
+    28% {
+        padding: 0 0 0 0;
+    }
+    37% {
+        padding: 0 0 24px 0;
+    }
+    43% {
+        padding: 0 0 24px 0;
+    }
+    49% {
+        padding: 0 0 0 0;
+    }
+    100% {
+        padding: 0 0 0 0;
+    }
+}
+
+@-webkit-keyframes cssload-finger-3-animation {
+    0% {
+        padding: 0 0 0 0;
+    }
+    28% {
+        padding: 0 0 0 0;
+    }
+    37% {
+        padding: 0 0 24px 0;
+    }
+    43% {
+        padding: 0 0 24px 0;
+    }
+    49% {
+        padding: 0 0 0 0;
+    }
+    100% {
+        padding: 0 0 0 0;
+    }
+}
+
+@-moz-keyframes cssload-finger-3-animation {
+    0% {
+        padding: 0 0 0 0;
+    }
+    28% {
+        padding: 0 0 0 0;
+    }
+    37% {
+        padding: 0 0 24px 0;
+    }
+    43% {
+        padding: 0 0 24px 0;
+    }
+    49% {
+        padding: 0 0 0 0;
+    }
+    100% {
+        padding: 0 0 0 0;
+    }
+}
+
+@keyframes cssload-finger-3-animation-span {
+    0% {
+        top: 0;
+    }
+    28% {
+        top: 0;
+    }
+    37% {
+        top: -14px;
+    }
+    43% {
+        top: -14px;
+    }
+    49% {
+        top: 0;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@-o-keyframes cssload-finger-3-animation-span {
+    0% {
+        top: 0;
+    }
+    28% {
+        top: 0;
+    }
+    37% {
+        top: -14px;
+    }
+    43% {
+        top: -14px;
+    }
+    49% {
+        top: 0;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@-ms-keyframes cssload-finger-3-animation-span {
+    0% {
+        top: 0;
+    }
+    28% {
+        top: 0;
+    }
+    37% {
+        top: -14px;
+    }
+    43% {
+        top: -14px;
+    }
+    49% {
+        top: 0;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@-webkit-keyframes cssload-finger-3-animation-span {
+    0% {
+        top: 0;
+    }
+    28% {
+        top: 0;
+    }
+    37% {
+        top: -14px;
+    }
+    43% {
+        top: -14px;
+    }
+    49% {
+        top: 0;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@-moz-keyframes cssload-finger-3-animation-span {
+    0% {
+        top: 0;
+    }
+    28% {
+        top: 0;
+    }
+    37% {
+        top: -14px;
+    }
+    43% {
+        top: -14px;
+    }
+    49% {
+        top: 0;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes cssload-finger-3-animation-i {
+    0% {
+        bottom: 6px;
+        height: 28px;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    28% {
+        bottom: 6px;
+        height: 28px;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    37% {
+        bottom: 16px;
+        height: 24px;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    43% {
+        bottom: 16px;
+        height: 24px;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    49% {
+        bottom: 6px;
+        height: 28px;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    100% {
+        bottom: 6px;
+        height: 28px;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+}
+
+@-o-keyframes cssload-finger-3-animation-i {
+    0% {
+        bottom: 6px;
+        height: 28px;
+        -o-border-radius: 20px 20px 14px 14px;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    28% {
+        bottom: 6px;
+        height: 28px;
+        -o-border-radius: 20px 20px 14px 14px;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    37% {
+        bottom: 16px;
+        height: 24px;
+        -o-border-radius: 14px 14px 8px 8px;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    43% {
+        bottom: 16px;
+        height: 24px;
+        -o-border-radius: 14px 14px 8px 8px;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    49% {
+        bottom: 6px;
+        height: 28px;
+        -o-border-radius: 20px 20px 14px 14px;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    100% {
+        bottom: 6px;
+        height: 28px;
+        -o-border-radius: 20px 20px 14px 14px;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+}
+
+@-ms-keyframes cssload-finger-3-animation-i {
+    0% {
+        bottom: 6px;
+        height: 28px;
+        -ms-border-radius: 20px 20px 14px 14px;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    28% {
+        bottom: 6px;
+        height: 28px;
+        -ms-border-radius: 20px 20px 14px 14px;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    37% {
+        bottom: 16px;
+        height: 24px;
+        -ms-border-radius: 14px 14px 8px 8px;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    43% {
+        bottom: 16px;
+        height: 24px;
+        -ms-border-radius: 14px 14px 8px 8px;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    49% {
+        bottom: 6px;
+        height: 28px;
+        -ms-border-radius: 20px 20px 14px 14px;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    100% {
+        bottom: 6px;
+        height: 28px;
+        -ms-border-radius: 20px 20px 14px 14px;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+}
+
+@-webkit-keyframes cssload-finger-3-animation-i {
+    0% {
+        bottom: 6px;
+        height: 28px;
+        -webkit-border-radius: 20px 20px 14px 14px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    28% {
+        bottom: 6px;
+        height: 28px;
+        -webkit-border-radius: 20px 20px 14px 14px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    37% {
+        bottom: 16px;
+        height: 24px;
+        -webkit-border-radius: 14px 14px 8px 8px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    43% {
+        bottom: 16px;
+        height: 24px;
+        -webkit-border-radius: 14px 14px 8px 8px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    49% {
+        bottom: 6px;
+        height: 28px;
+        -webkit-border-radius: 20px 20px 14px 14px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    100% {
+        bottom: 6px;
+        height: 28px;
+        -webkit-border-radius: 20px 20px 14px 14px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+}
+
+@-moz-keyframes cssload-finger-3-animation-i {
+    0% {
+        bottom: 6px;
+        height: 28px;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    28% {
+        bottom: 6px;
+        height: 28px;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    37% {
+        bottom: 16px;
+        height: 24px;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    43% {
+        bottom: 16px;
+        height: 24px;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    49% {
+        bottom: 6px;
+        height: 28px;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    100% {
+        bottom: 6px;
+        height: 28px;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+}
+
+@keyframes cssload-finger-4-animation {
+    0% {
+        padding: 16px 0 6px 0;
+    }
+    32% {
+        padding: 16px 0 6px 0;
+    }
+    41% {
+        padding: 8px 0 40px 0;
+    }
+    47% {
+        padding: 8px 0 40px 0;
+    }
+    53% {
+        padding: 16px 0 6px 0;
+    }
+    100% {
+        padding: 16px 0 6px 0;
+    }
+}
+
+@-o-keyframes cssload-finger-4-animation {
+    0% {
+        padding: 16px 0 6px 0;
+    }
+    32% {
+        padding: 16px 0 6px 0;
+    }
+    41% {
+        padding: 8px 0 40px 0;
+    }
+    47% {
+        padding: 8px 0 40px 0;
+    }
+    53% {
+        padding: 16px 0 6px 0;
+    }
+    100% {
+        padding: 16px 0 6px 0;
+    }
+}
+
+@-ms-keyframes cssload-finger-4-animation {
+    0% {
+        padding: 16px 0 6px 0;
+    }
+    32% {
+        padding: 16px 0 6px 0;
+    }
+    41% {
+        padding: 8px 0 40px 0;
+    }
+    47% {
+        padding: 8px 0 40px 0;
+    }
+    53% {
+        padding: 16px 0 6px 0;
+    }
+    100% {
+        padding: 16px 0 6px 0;
+    }
+}
+
+@-webkit-keyframes cssload-finger-4-animation {
+    0% {
+        padding: 16px 0 6px 0;
+    }
+    32% {
+        padding: 16px 0 6px 0;
+    }
+    41% {
+        padding: 8px 0 40px 0;
+    }
+    47% {
+        padding: 8px 0 40px 0;
+    }
+    53% {
+        padding: 16px 0 6px 0;
+    }
+    100% {
+        padding: 16px 0 6px 0;
+    }
+}
+
+@-moz-keyframes cssload-finger-4-animation {
+    0% {
+        padding: 16px 0 6px 0;
+    }
+    32% {
+        padding: 16px 0 6px 0;
+    }
+    41% {
+        padding: 8px 0 40px 0;
+    }
+    47% {
+        padding: 8px 0 40px 0;
+    }
+    53% {
+        padding: 16px 0 6px 0;
+    }
+    100% {
+        padding: 16px 0 6px 0;
+    }
+}
+
+@keyframes cssload-finger-4-animation-span {
+    0% {
+        top: 0;
+    }
+    32% {
+        top: 0;
+    }
+    41% {
+        top: -14px;
+    }
+    47% {
+        top: -14px;
+    }
+    53% {
+        top: 0;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@-o-keyframes cssload-finger-4-animation-span {
+    0% {
+        top: 0;
+    }
+    32% {
+        top: 0;
+    }
+    41% {
+        top: -14px;
+    }
+    47% {
+        top: -14px;
+    }
+    53% {
+        top: 0;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@-ms-keyframes cssload-finger-4-animation-span {
+    0% {
+        top: 0;
+    }
+    32% {
+        top: 0;
+    }
+    41% {
+        top: -14px;
+    }
+    47% {
+        top: -14px;
+    }
+    53% {
+        top: 0;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@-webkit-keyframes cssload-finger-4-animation-span {
+    0% {
+        top: 0;
+    }
+    32% {
+        top: 0;
+    }
+    41% {
+        top: -14px;
+    }
+    47% {
+        top: -14px;
+    }
+    53% {
+        top: 0;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@-moz-keyframes cssload-finger-4-animation-span {
+    0% {
+        top: 0;
+    }
+    32% {
+        top: 0;
+    }
+    41% {
+        top: -14px;
+    }
+    47% {
+        top: -14px;
+    }
+    53% {
+        top: 0;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes cssload-finger-4-animation-i {
+    0% {
+        bottom: 6px;
+        height: 28px;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    32% {
+        bottom: 6px;
+        height: 28px;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    41% {
+        bottom: 16px;
+        height: 24px;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    47% {
+        bottom: 16px;
+        height: 24px;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    53% {
+        bottom: 6px;
+        height: 28px;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    100% {
+        bottom: 6px;
+        height: 28px;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+}
+
+@-o-keyframes cssload-finger-4-animation-i {
+    0% {
+        bottom: 6px;
+        height: 28px;
+        -o-border-radius: 20px 20px 14px 14px;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    32% {
+        bottom: 6px;
+        height: 28px;
+        -o-border-radius: 20px 20px 14px 14px;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    41% {
+        bottom: 16px;
+        height: 24px;
+        -o-border-radius: 14px 14px 8px 8px;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    47% {
+        bottom: 16px;
+        height: 24px;
+        -o-border-radius: 14px 14px 8px 8px;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    53% {
+        bottom: 6px;
+        height: 28px;
+        -o-border-radius: 20px 20px 14px 14px;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    100% {
+        bottom: 6px;
+        height: 28px;
+        -o-border-radius: 20px 20px 14px 14px;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+}
+
+@-ms-keyframes cssload-finger-4-animation-i {
+    0% {
+        bottom: 6px;
+        height: 28px;
+        -ms-border-radius: 20px 20px 14px 14px;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    32% {
+        bottom: 6px;
+        height: 28px;
+        -ms-border-radius: 20px 20px 14px 14px;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    41% {
+        bottom: 16px;
+        height: 24px;
+        -ms-border-radius: 14px 14px 8px 8px;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    47% {
+        bottom: 16px;
+        height: 24px;
+        -ms-border-radius: 14px 14px 8px 8px;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    53% {
+        bottom: 6px;
+        height: 28px;
+        -ms-border-radius: 20px 20px 14px 14px;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    100% {
+        bottom: 6px;
+        height: 28px;
+        -ms-border-radius: 20px 20px 14px 14px;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+}
+
+@-webkit-keyframes cssload-finger-4-animation-i {
+    0% {
+        bottom: 6px;
+        height: 28px;
+        -webkit-border-radius: 20px 20px 14px 14px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    32% {
+        bottom: 6px;
+        height: 28px;
+        -webkit-border-radius: 20px 20px 14px 14px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    41% {
+        bottom: 16px;
+        height: 24px;
+        -webkit-border-radius: 14px 14px 8px 8px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    47% {
+        bottom: 16px;
+        height: 24px;
+        -webkit-border-radius: 14px 14px 8px 8px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    53% {
+        bottom: 6px;
+        height: 28px;
+        -webkit-border-radius: 20px 20px 14px 14px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    100% {
+        bottom: 6px;
+        height: 28px;
+        -webkit-border-radius: 20px 20px 14px 14px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+}
+
+@-moz-keyframes cssload-finger-4-animation-i {
+    0% {
+        bottom: 6px;
+        height: 28px;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    32% {
+        bottom: 6px;
+        height: 28px;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    41% {
+        bottom: 16px;
+        height: 24px;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    47% {
+        bottom: 16px;
+        height: 24px;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 14px 14px 8px 8px;
+        -moz-background-clip: padding;
+        border-radius: 14px 14px 8px 8px;
+        background-clip: padding-box;
+    }
+    53% {
+        bottom: 6px;
+        height: 28px;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+    100% {
+        bottom: 6px;
+        height: 28px;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 20px 20px 14px 14px;
+        -moz-background-clip: padding;
+        border-radius: 20px 20px 14px 14px;
+        background-clip: padding-box;
+    }
+}
+
+@keyframes cssload-finger-5-animation {
+    0% {
+        top: 64px;
+        right: 0;
+        border-radius: 0 10px 28px 0;
+        background-clip: padding-box;
+        -moz-border-radius: 0 10px 28px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 10px 28px 0;
+        background-clip: padding-box;
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    34% {
+        top: 64px;
+        right: 0;
+        border-radius: 0 10px 28px 0;
+        background-clip: padding-box;
+        -moz-border-radius: 0 10px 28px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 10px 28px 0;
+        background-clip: padding-box;
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    43% {
+        top: 40px;
+        right: 4px;
+        border-radius: 0 16px 40px 0;
+        background-clip: padding-box;
+        -moz-border-radius: 0 16px 40px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 16px 40px 0;
+        background-clip: padding-box;
+        transform: rotate(-12deg);
+        -ms-transform: rotate(-12deg);
+        transform: rotate(-12deg);
+    }
+    50% {
+        top: 40px;
+        right: 4px;
+        border-radius: 0 16px 40px 0;
+        background-clip: padding-box;
+        -moz-border-radius: 0 16px 40px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 16px 40px 0;
+        background-clip: padding-box;
+        transform: rotate(-12deg);
+        -ms-transform: rotate(-12deg);
+        transform: rotate(-12deg);
+    }
+    60% {
+        top: 64px;
+        right: 0;
+        border-radius: 0 10px 28px 0;
+        background-clip: padding-box;
+        -moz-border-radius: 0 10px 28px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 10px 28px 0;
+        background-clip: padding-box;
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 64px;
+        right: 0;
+        border-radius: 0 10px 28px 0;
+        background-clip: padding-box;
+        -moz-border-radius: 0 10px 28px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 10px 28px 0;
+        background-clip: padding-box;
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@-o-keyframes cssload-finger-5-animation {
+    0% {
+        top: 64px;
+        right: 0;
+        -o-border-radius: 0 10px 28px 0;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 0 10px 28px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 10px 28px 0;
+        background-clip: padding-box;
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    34% {
+        top: 64px;
+        right: 0;
+        -o-border-radius: 0 10px 28px 0;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 0 10px 28px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 10px 28px 0;
+        background-clip: padding-box;
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    43% {
+        top: 40px;
+        right: 4px;
+        -o-border-radius: 0 16px 40px 0;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 0 16px 40px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 16px 40px 0;
+        background-clip: padding-box;
+        -o-transform: rotate(-12deg);
+        -ms-transform: rotate(-12deg);
+        transform: rotate(-12deg);
+    }
+    50% {
+        top: 40px;
+        right: 4px;
+        -o-border-radius: 0 16px 40px 0;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 0 16px 40px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 16px 40px 0;
+        background-clip: padding-box;
+        -o-transform: rotate(-12deg);
+        -ms-transform: rotate(-12deg);
+        transform: rotate(-12deg);
+    }
+    60% {
+        top: 64px;
+        right: 0;
+        -o-border-radius: 0 10px 28px 0;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 0 10px 28px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 10px 28px 0;
+        background-clip: padding-box;
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 64px;
+        right: 0;
+        -o-border-radius: 0 10px 28px 0;
+        -o-background-clip: padding-box;
+        -moz-border-radius: 0 10px 28px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 10px 28px 0;
+        background-clip: padding-box;
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@-ms-keyframes cssload-finger-5-animation {
+    0% {
+        top: 64px;
+        right: 0;
+        -ms-border-radius: 0 10px 28px 0;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 0 10px 28px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 10px 28px 0;
+        background-clip: padding-box;
+        -ms-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    34% {
+        top: 64px;
+        right: 0;
+        -ms-border-radius: 0 10px 28px 0;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 0 10px 28px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 10px 28px 0;
+        background-clip: padding-box;
+        -ms-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    43% {
+        top: 40px;
+        right: 4px;
+        -ms-border-radius: 0 16px 40px 0;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 0 16px 40px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 16px 40px 0;
+        background-clip: padding-box;
+        -ms-transform: rotate(-12deg);
+        -ms-transform: rotate(-12deg);
+        transform: rotate(-12deg);
+    }
+    50% {
+        top: 40px;
+        right: 4px;
+        -ms-border-radius: 0 16px 40px 0;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 0 16px 40px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 16px 40px 0;
+        background-clip: padding-box;
+        -ms-transform: rotate(-12deg);
+        -ms-transform: rotate(-12deg);
+        transform: rotate(-12deg);
+    }
+    60% {
+        top: 64px;
+        right: 0;
+        -ms-border-radius: 0 10px 28px 0;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 0 10px 28px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 10px 28px 0;
+        background-clip: padding-box;
+        -ms-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 64px;
+        right: 0;
+        -ms-border-radius: 0 10px 28px 0;
+        -ms-background-clip: padding-box;
+        -moz-border-radius: 0 10px 28px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 10px 28px 0;
+        background-clip: padding-box;
+        -ms-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes cssload-finger-5-animation {
+    0% {
+        top: 64px;
+        right: 0;
+        -webkit-border-radius: 0 10px 28px 0;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 0 10px 28px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 10px 28px 0;
+        background-clip: padding-box;
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    34% {
+        top: 64px;
+        right: 0;
+        -webkit-border-radius: 0 10px 28px 0;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 0 10px 28px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 10px 28px 0;
+        background-clip: padding-box;
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    43% {
+        top: 40px;
+        right: 4px;
+        -webkit-border-radius: 0 16px 40px 0;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 0 16px 40px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 16px 40px 0;
+        background-clip: padding-box;
+        -webkit-transform: rotate(-12deg);
+        -ms-transform: rotate(-12deg);
+        transform: rotate(-12deg);
+    }
+    50% {
+        top: 40px;
+        right: 4px;
+        -webkit-border-radius: 0 16px 40px 0;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 0 16px 40px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 16px 40px 0;
+        background-clip: padding-box;
+        -webkit-transform: rotate(-12deg);
+        -ms-transform: rotate(-12deg);
+        transform: rotate(-12deg);
+    }
+    60% {
+        top: 64px;
+        right: 0;
+        -webkit-border-radius: 0 10px 28px 0;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 0 10px 28px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 10px 28px 0;
+        background-clip: padding-box;
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 64px;
+        right: 0;
+        -webkit-border-radius: 0 10px 28px 0;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 0 10px 28px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 10px 28px 0;
+        background-clip: padding-box;
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@-moz-keyframes cssload-finger-5-animation {
+    0% {
+        top: 64px;
+        right: 0;
+        -moz-border-radius: 0 10px 28px 0;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 0 10px 28px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 10px 28px 0;
+        background-clip: padding-box;
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    34% {
+        top: 64px;
+        right: 0;
+        -moz-border-radius: 0 10px 28px 0;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 0 10px 28px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 10px 28px 0;
+        background-clip: padding-box;
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    43% {
+        top: 40px;
+        right: 4px;
+        -moz-border-radius: 0 16px 40px 0;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 0 16px 40px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 16px 40px 0;
+        background-clip: padding-box;
+        -moz-transform: rotate(-12deg);
+        -ms-transform: rotate(-12deg);
+        transform: rotate(-12deg);
+    }
+    50% {
+        top: 40px;
+        right: 4px;
+        -moz-border-radius: 0 16px 40px 0;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 0 16px 40px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 16px 40px 0;
+        background-clip: padding-box;
+        -moz-transform: rotate(-12deg);
+        -ms-transform: rotate(-12deg);
+        transform: rotate(-12deg);
+    }
+    60% {
+        top: 64px;
+        right: 0;
+        -moz-border-radius: 0 10px 28px 0;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 0 10px 28px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 10px 28px 0;
+        background-clip: padding-box;
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 64px;
+        right: 0;
+        -moz-border-radius: 0 10px 28px 0;
+        -moz-background-clip: padding-box;
+        -moz-border-radius: 0 10px 28px 0;
+        -moz-background-clip: padding;
+        border-radius: 0 10px 28px 0;
+        background-clip: padding-box;
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}

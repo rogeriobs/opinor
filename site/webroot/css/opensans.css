@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'open_sans';
+    src: url('../font/Roboto-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sans';
+    src: url('../font/Roboto-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}

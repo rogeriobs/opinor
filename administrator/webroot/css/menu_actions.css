@@ -1,0 +1,65 @@
+.menuactions {
+    background: #fafafa;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+    color: #757575;
+    font-size: 11px;
+    padding: 16px 0;
+    position: absolute;
+    top: 48px;
+    transform: scale(0);
+    transition: transform 0.2s;
+    z-index: 96; }
+.menuactions.show {
+    transform: scale(1); }
+.menuactions.menuactions--right {
+    transform-origin: top right; }
+.menuactions.menuactions--left {
+    transform-origin: top left; }
+.menuactions li {
+    display: block;
+    min-height: 32px;
+    line-height: 16px;
+    margin: 8px 0;
+    padding: 0 16px;
+    width: 100%; }
+.menuactions li.menuactions-separator {
+    background: #eee;
+    height: 1px;
+    min-height: 0;
+    margin: 12px 0;
+    padding: 0; }
+.menuactions li.menuactions-separator:hover {
+    background: #eee; }
+.menuactions li:first-child {
+    margin-top: 0; }
+.menuactions li:last-child {
+    margin-bottom: 0; }
+.menuactions li:hover {
+    background: #eee; }
+.menuactions a {
+    color: inherit;
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    padding: 0;
+    text-decoration: none;
+    width: 100%;
+    white-space: nowrap; }
+.menuactions a:hover {
+    color: #444; 
+}
+
+.btnMenuActions{
+    position: absolute;
+    top: 22px;
+    right: 2%;
+    padding:9px 15px;
+    z-index: 1000;
+    border-radius: 5px;
+}
+.btnMenuActions .fa{
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}

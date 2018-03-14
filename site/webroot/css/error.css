@@ -1,0 +1,17 @@
+body { background: #222; color: #DDD;}
+.error-template {padding: 40px 15px;text-align: center;}
+.error-actions {margin-top:10%;margin-bottom:25px;}
+.error-actions .btn { margin-right:10px; }
+
+.error-template h1{
+    margin: 5% auto;
+}
+.error-template img{
+    margin: 1% auto;
+}
+.error-template h2{
+    margin: 1% auto;
+}
+.error-details{
+    font-size: 14px;
+}

@@ -1,0 +1,57 @@
+<?php
+namespace App\Model\Entity;
+
+use Cake\ORM\Entity;
+
+/**
+ * Ipsum Entity
+ *
+ * @property int $id
+ * @property string $nome
+ * @property string $email
+ * @property string $password
+ * @property string $status
+ * @property \Cake\I18n\Time $data_nascimento
+ * @property int $cidade_id
+ * @property \Cake\I18n\Time $created
+ * @property \Cake\I18n\Time $modified
+ *
+ * @property \App\Model\Entity\Cidade $cidade
+ * @property \App\Model\Entity\IpsumActivityLog[] $ipsum_activity_log
+ * @property \App\Model\Entity\NewsortopicComment[] $newsortopic_comments
+ * @property \App\Model\Entity\NewsortopicCommentsRating[] $newsortopic_comments_rating
+ * @property \App\Model\Entity\PollOptionsVote[] $poll_options_votes
+ */
+class Ipsum extends Entity
+{
+
+    /**
+     * Fields that can be mass assigned using newEntity() or patchEntity().
+     *
+     * Note that when '*' is set to true, this allows all unspecified fields to
+     * be mass assigned. For security purposes, it is advised to set '*' to false
+     * (or remove it), and explicitly make individual fields accessible as needed.
+     *
+     * @var array
+     */
+    protected $_accessible = [
+        '*' => true,
+        'id' => false
+    ];
+
+    /**
+     * Fields that are excluded from JSON versions of the entity.
+     *
+     * @var array
+     */
+    protected $_hidden = [
+        'password'
+    ];
+    
+    protected function _setPassword($password)
+    {
+        if (strlen($password) > 0) {
+          return (new \App\Auth\GreenPasswordHasher())->hash($password);
+        }
+    }
+}
